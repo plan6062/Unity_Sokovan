@@ -1,2 +1,2 @@
 # Unity_Sokovan
- make sokovan game with unity
+유니티를 이용한 소코반 게임
