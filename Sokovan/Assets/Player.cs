@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public GameManager gameManager;
     public float speed = 10f;
     private Rigidbody playerRigidbody;
     // Start is called before the first frame update
@@ -15,6 +16,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(gameManager.isGameOver == true){
+            return;
+        }
         // if(Input.GetKey(KeyCode.W)){
         //     playerRigidbody.AddForce(0,0,speed);
         // }
